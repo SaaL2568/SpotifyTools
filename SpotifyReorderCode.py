@@ -2,12 +2,19 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import os
 import time
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Your credentials and settings
+CLIENT_ID = os.getenv("SPOTIPY_CLIENT_ID")
+CLIENT_SECRET = os.getenv("SPOTIPY_CLIENT_SECRET")
+REDIRECT_URI = os.getenv("SPOTIPY_REDIRECT_URI")
 
 CACHE_PATH = os.path.expanduser("~/.spotipyoauthcache")  # Or any path you have write access to
-# Your credentials and settings
-CLIENT_ID = 'client_id'
-CLIENT_SECRET = 'client_Seecret'
-REDIRECT_URI = 'https://open.spotify.com/'
+
 SCOPE = 'playlist-read-private playlist-modify-private playlist-modify-public'
 
 
