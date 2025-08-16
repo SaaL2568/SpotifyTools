@@ -1,0 +1,21 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env/
+venv/
+ENV/
+
+# Dotenv file with secrets
+.env
+
+# Spotipy cache
+.spotipyoauthcache
+.cache
+
+# OS-specific files
+.DS_Store
+Thumbs.db
